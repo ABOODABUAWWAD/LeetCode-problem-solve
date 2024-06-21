@@ -1,3 +1,1 @@
-/* Write your PL/SQL query statement below */
-select name Customers from Customers where 
-id not in (select customerId from Orders);
+select name Customers from (select name from Customers where id not in (select customerId from Orders));
