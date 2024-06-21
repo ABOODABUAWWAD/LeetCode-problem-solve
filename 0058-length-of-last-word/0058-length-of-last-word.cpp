@@ -1,7 +1,7 @@
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int length_s1=0,length_s2;
+        short length_s1=0,length_s2;
         for(int i=0;i<s.length();i++){
             if(s[i]!=32)
             {
