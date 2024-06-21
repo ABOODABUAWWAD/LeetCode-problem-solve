@@ -1,7 +1,7 @@
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        int s_hay=haystack.length(),s_needle=needle.length();
+        short s_hay=haystack.length(),s_needle=needle.length();
         for (int i=0;i<s_hay;i++)
         {  
                 if(haystack[i]==needle[0]){
@@ -14,7 +14,7 @@ public:
 return -1;
     }
     bool check_needle(string bigst,string needle,int i){
-        int s_needle=needle.length();
+        short s_needle=needle.length();
         for(int j=0;j<s_needle;j++)
        {   if(bigst[i]==needle[j])
            {
