@@ -10,13 +10,11 @@
  */
 class Solution {
 public:
-ListNode* addTwoNumbers(ListNode* h1, ListNode* h2) {
+ListNode* addTwoNumbers(ListNode* cur1, ListNode* cur2) {
     short sum = 0, reminder = 0, number = 0, counter = 0;
-    ListNode* cur1,*cur2,*newnode,*result;
+    ListNode*newnode,*result;
     newnode = new ListNode();
     result = newnode;
-    cur1 = h1;
-    cur2 = h2;
 
     while (cur1 != nullptr || cur2 != nullptr)
     {
