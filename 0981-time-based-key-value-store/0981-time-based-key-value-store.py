@@ -1,12 +1,9 @@
 from collections import defaultdict
 class TimeMap(object):
-
     def __init__(self):
         self.dic=defaultdict(list)
-
     def set(self, key, value, timestamp):
         self.dic[key].append([timestamp, value])
-
     def get(self, key, timestamp):
         if key not in self.dic:
             return ""
